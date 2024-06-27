@@ -5,6 +5,7 @@ instance/
 .cache/
 .pytest_cache/
 .coverage
+flaskr.egg-info/
 htmlcov/
 dist/
 build/
