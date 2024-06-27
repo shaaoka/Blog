@@ -35,7 +35,7 @@ def init_db():
 def init_db_command():
     init_db()
     #印出訊息
-    click.echo('初始化資料庫完成')
+    click.echo('Initialized.')
 
 def init_app(app):
     app.teardown_appcontext(close_db)

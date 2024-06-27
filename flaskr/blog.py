@@ -29,7 +29,7 @@ def create():
         error = None
 
         if not title:
-            error = '標題為必填項'
+            error = 'Title is required.'
         
         if error is not None:
             flash(error)
@@ -55,7 +55,7 @@ def get_post(id, check_author=True):
     ).fetchone()
 
     if post is None:
-        abort(404, f"此貼文id {id} 不存在.")
+        abort(404, f"Post id {id} doesn't exist.")
 
     if check_author and post['author_id'] != g.user['id']:
         abort(403)
@@ -73,7 +73,7 @@ def update(id):
         error = None
 
         if not title:
-            error = '標題是必須的.'
+            error = 'Title is required..'
         
         if error is not None:
             flash(error)
