@@ -28,7 +28,8 @@ CREATE TABLE user (
     username TEXT UNIQUE NOT NULL,
     password TEXT NOT NULL
 );
-
+#### `post` 表
+```sql
 CREATE TABLE post (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     author_id INTEGER NOT NULL,
