@@ -30,6 +30,7 @@ CREATE TABLE user (
 )
 ```
 #### `post` 表
+```sql
 CREATE TABLE post (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     author_id INTEGER NOT NULL,
